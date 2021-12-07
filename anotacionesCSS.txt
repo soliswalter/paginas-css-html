@@ -1,0 +1,20 @@
+margin auto vertical por defecto es 0 
+margin auto horizontal centra horizontalmente el bloque
+
+no puedo definir margin auto horizontal si no tengo
+definido un width previamente
+
+el width por defecto (auto) de un bloque es 100%,
+el heigth por defecto es el alto del contenido del bloque
+puede ser 0 si el bloque no contiene nada
+
+con css grid y flexbox se puede hacer lo mismo, pero
+css grid esta pensado mas para dar estructura a paginas
+web mientras flexbox fue creado para dar un acomodo
+de forma horizontal o vertical a elementos
+
+
+ver bien vertical-align, float, position, etc
+
+soliswalter_
+
