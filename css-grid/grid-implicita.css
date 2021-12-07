@@ -1,0 +1,15 @@
+.contenedor {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 200px 100px 200px;
+
+    /* Controlar el tamaño de las celdas que se agregan de forma automatica, en esta caso el tamaño de las filas */
+   /*  grid-auto-rows: 400px; */
+   
+    /* Cambia el flujo en el que se agregarn elementos, por defecto es row, y agrega el primer elemento luego a la derecha el segundo y asi... */
+    grid-auto-flow: column;
+
+    grid-auto-columns: 100px;
+
+}

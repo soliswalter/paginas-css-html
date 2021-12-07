@@ -1,0 +1,6 @@
+.contenedor {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: minmax(300px, 1fr) 1fr;  /* la primera columna tiene como minimo 300px de ancho, no se puede hacer mas chica */
+    grid-template-rows: minmax(100px, auto) 400px; /* la primera fila tiene un alto minimo de 100px y como maximo lo que necesite, la segunda fila tiene un alto fijo de 400px, el resto de las filas no indicadas ocupan tamaño equitativo */
+}

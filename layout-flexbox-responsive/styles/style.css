@@ -1,0 +1,183 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .contenedor {
+        background:#ccc;
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+        /* flexbox */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    body {
+        background:#e9e9e9;
+    }   
+
+    header {
+        background:#2c3e50;
+        width: 100%;
+        padding: 20px;
+        /* flexbox */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    header .logo {
+        color: #fff;
+        font-size: 30px;
+    }
+
+    header .logo img {
+        width: 50px;
+        vertical-align: top;    /* es para centrar logo y link verlo */
+    }
+
+    header .logo a {
+        color: #fff;
+        text-decoration: none;
+        line-height: 50px; /* es para centrar logo y link verlo bien */
+    }
+
+    header nav {
+        width: 50%;
+        /* flexbox */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    header nav a{
+        background-color: #c0392b;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        /* flexbox */
+        flex-grow: 1;
+    }
+
+    header nav a:hover {
+        background: #e74c3c;
+    }
+
+    .main {
+        background:#fff;
+        padding: 20px;
+        /* flexbox */
+        flex: 1 1 70%; /* primer valor: flex-shrink (cuanto creceria el elemento en comparacion con los demas), segundo valor cuanto se encogeria, tercer valor flex-basis que seria el width */
+        /* flex: 1;  */ /* //significa que se va a encoger y estirar en proporcion a lo que se encogen y estiran los demás */
+     }
+
+    .main article {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #000;
+    }
+
+    .main article:nth-last-child(1){
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    aside {
+        background:#e67e22;
+        padding: 20px;
+        /* flexbox */
+        flex: 1 1 30%; /* creo que es propiedad como hijo luego sigue propiedades como padre en flexbox */
+        /* flex: 0 0 300px; */ /* si tengo algo en el sidebar que no quiero que sea mas pequeño como publicidad puedo usar esta opción */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    aside .widget {
+        background: #d35400;
+        height: 150px;
+        margin: 10px;
+    }
+
+    footer {
+        background:#2c3e50;
+        width: 100%;
+        padding: 20px;
+        /* flexbox */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* deja un elemento a la izquierda y el otro a la derecha */
+    }
+
+    footer .links {
+        background: #c0392b;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer .links a {
+        flex-grow: 1;  /* para que abarquen un 100% ??*/
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    footer .links a:hover {
+        background: #E74C3C;
+    }
+
+    footer .social {
+        background: #e67e22;
+    }
+
+    footer .social a {
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;  /* asi puedo usar el padding, porque en el elemento social no uso flexbox */
+        padding: 10px;
+    }
+
+
+    @media (max-width: 800px) {
+        .contenedor {
+            flex-direction: column;
+        }
+        header {
+            flex-direction: column;
+            padding: 0;
+        }
+        header .logo {
+            margin: 20px 0;
+        }
+
+        header nav {
+            width: 100%;
+        }
+        aside  {
+            flex-direction: row;
+            flex: 0;
+        }
+        aside .widget {
+            flex-grow: 1;
+        }
+    }
+
+    @media (max-width: 600px) {
+        aside {
+            flex-direction: column;
+        }
+
+        footer {
+            justify-content: space-around;
+        }
+    }

@@ -1,0 +1,30 @@
+.contenedor {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+
+    /* Alinea horizontalmente */
+    /* justify-items: start; */   /* solo se usa el espacio que necesita horizontalmente */
+    /* justify-items: auto;  */       /* toma el tamaño automatico, en este caso el 100% */
+    /* justify-items: stretch;   */           /* abarca todo el espacio que pueda, es igual a auto, creo */
+    justify-items: center;              /* centra el elemento de forma horizontal */
+    /* justify-items: end;  */                    /* posiciona los elementos a la derecha
+ */
+    /* Alinea verticalmente */      
+    /* align-items: start; */     /* solo se usa el espaco que necesita verticalmente */
+    /* tiene las mismas opciones que justify-items */
+
+    align-items: center;
+}
+
+.contenedor .item {
+    background: #ff8000;
+    justify-self: stretch;      /* si pusiera width: 100% no respetaria el ancho de la columna, pero asi si funciona */
+    align-self: stretch;
+
+    /* Estas son las lineas extras para centrar el texto usando flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

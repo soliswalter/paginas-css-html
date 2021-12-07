@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body {
+      font-size: 16px;
+      width: 100%;
+      height: 100%;
+      background-color: salmon;
+      border: 4px solid black;
+  }
+
+  .container {
+    font-size: 16px;
+    width: 70%;
+    height: 70%;
+    background-color: orange;
+    margin: 5em auto;
+    padding: 5em 5em;
+    border: 3px solid black;
+  }
+
+ div .caja1 , div .caja2 {
+    width: 20em;
+    height: 20em;
+    margin: auto;
+  }
+
+  .caja1 {
+      border: 1px solid black;
+      background-color: black;
+      /* margin: auto; */
+
+
+   }
+
+   .caja2 {
+       border: 1px solid red;
+       background-color: red;
+       /* margin: auto; */
+       margin-top: 5em;
+      
+   }
+
+
+
+

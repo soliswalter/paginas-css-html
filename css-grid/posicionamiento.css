@@ -1,0 +1,26 @@
+.contenedor {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.contenedor .item {
+    background: #ff8000;
+    /* grid-column-start: 1;
+    grid-column-end: 4;  */ /* con start y end puedo cambiar el posicionamiento de los elementos y el tamaño, si por ejemplo empieza en linea 1 termina en 3 */
+    /* grid-column-end: -1; */  /* el -1 indica la ultima columna, el -2 la anteultima y asi, esto sirve por si se me ocurre aumentar la cantidad de columnas y mi elemento deja de ocupar toda la fila, es lo que pasaria en el ej anterior, si agrego una quinta columna */
+    /* grid-row-start: 2;
+    grid-row-end: 4;
+ */
+    grid-column: 1 / 4;   /* tambien se puede escribir todo en una sola linea */
+    grid-row: 2 / 4;
+
+    /* span */
+/*     grid-column: span 3;
+    grid-row: 3 / span 2; */
+
+} 
+
+
+

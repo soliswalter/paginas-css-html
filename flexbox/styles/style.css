@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 90%;
+    height: 600px;
+    background-color: orange;
+    margin: 15px auto 0;
+    border: 2px solid black;
+    display: flex;  /* //indica que voy a usar flexbox */
+    flex-direction: row; /* //define en que dirección el contenedor va a apilar el contenido, en este caso horizontalmente, si quiero que sea vertical uso el valor column */
+    flex-wrap: wrap;   /*  // si este valor es wrap entonces si el total de elementos no entran dentro del ancho del contenedor, entonces muestra los elementos que sobran en la siguiente linea y asi sucesivamente */
+    justify-content: center; /* //justifica el contenido cuando no utiliza todo el ancho, en este caso justifica al centro pero hay más opciones, como flex-start o flex-end que justifican a izq o der */
+    align-items: center; /* //alinea verticalmente (en este caso centro pero hay mas opciones), solo sirve si tengo una fila o columna, si tengo 2 o mas usar align-content */
+}
+
+.elemento {
+    width: 100px;
+    height: 100px;
+    background-color:blue;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 25px;
+    margin: 15px;
+
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!--header agrupa links tambien imagen y logo de pagina, podemos crear tantas como queramo siempre y cuando
+    no este dentro de otra etiqueta header o adentro de footer-->
+    <header>
+        <h1 id="titulo">Nombre del Blog</h1>
+    </header>
+
+    <!-- define seccion de la pagina, y dentro podemos poner las etiquetas que queramos-->
+    <section class="container">
+        <!-- se utiliza para definir contenido independiente, se puede utilizar para una historia de noticias,
+        para un tweet, para una imagen de instagram, etc.-->
+        <article class="post">
+            <h2>Titulo de mi post</h2>
+            <p>Descripción de mi post</p>
+            <img src="img/coffee.png" width="400"/>
+            <p>Texto del articulo que hay acá y es texto de prueba. Chanchito feliz!</p>
+        </article>
+        <article class="post">
+            <h2>Titulo de mi post 2</h2>
+            <p>Descripción de mi post 2</p>
+            <img src="img/monster.png" width="400"/>
+            <p>Texto del articulo que hay acá y es texto de prueba. Chanchito feliz!</p>
+        </article>
+        <article class="post">
+            <h2>Titulo de mi post 3</h2>
+            <p>Descripción de mi post 3</p>
+            <img src="img/guitarra.png" width="400"/>
+            <p>Texto del articulo que hay acá y es texto de prueba. Chanchito feliz!</p>
+        </article>
+    </section>
+    <!--pie de pagina de la pagina web, se pueden tener multiples footer. Por lo general contiene 
+        el copyrigth del sitio, info de contacto, info del sitio o como navegar, link para volver al comienzo de la pagina-->
+    <footer>
+        <section>
+            <a href="#titulo">Ir al comienzo</a>
+            <a href="mailto:soliswalter93@gmail.com">Contáctame aquí!</a>
+        </section>
+        <p>Copyrigth 2021</p>
+    </footer>
+</body>
+</html>

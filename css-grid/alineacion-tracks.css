@@ -1,0 +1,15 @@
+.contenedor {
+    display: grid;
+    gap: 20px;
+    height: 700px;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+
+    /* Alinea de forma horizontal */
+    justify-content: center;
+                    /* normal |start | center | end | space-around | space-between | space-evenly */
+    
+    /*  Alinea de forma vertical */
+    align-content: center;
+                    /* normal |start | center | end | space-around | space-between | space-evenly */
+}
